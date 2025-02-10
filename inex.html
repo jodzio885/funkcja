@@ -13,7 +13,8 @@
         <h1>JS - Funkcje</h1>
         <main>
             <script>
-                function writeNameParametrs(welcoming, userName){
+                /*
+                function writeNameParametrs(welcoming='Fryteczki!', userName='Paulinka!'){
 
                     const tekst = `<p> ${welcoming} ${userName} </p>`
 
@@ -23,6 +24,34 @@
                 document.write(writeNameParametrs('Cześć' ,'Dominika'))
                 document.write(writeNameParametrs('Witaj' ,'Kocham konie'))
                 document.write(writeNameParametrs('Hej' ,'Natalia Rutkowska'))
+                document.write(writeNameParametrs())
+                
+                var x, y;
+                x = prompt("Podaj rodzaj przywitania")
+                y = prompt("Podaj Imię")
+                document.write(x , y)
+                */
+
+                /* to nie działa
+                var welcoming, userName;
+                welcoming = prompt("Podaj rodzaj przywitania")
+                userName = prompt("Podaj Imię")
+                
+
+                document.write(writeNameParametrs(welcoming, userName))
+                */
+
+                function obliczpole(){
+                    let a = parseFloat(prompt("Podaj 1 podstawę"))
+                    let b = parseFloat(prompt("Podaj 2 podstawę"))
+                    let h = prompt("Podaj wysokość")
+
+                    let wynik= ((a+b)*h)/2
+                    document.write(`Pole trapezu wynosi: ${wynik}`)
+
+                }
+                obliczpole()
+
 
             </script>
         </main>
